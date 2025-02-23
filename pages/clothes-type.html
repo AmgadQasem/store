@@ -1,0 +1,777 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العود</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="clothes-type">
+    <!-- Header -->
+    <header class="py-4 bg-danger">
+        <div class="container">
+            <div class="row gy-3 gy-md-0 align-items-center">
+                <div class="d-flex justify-content-between col-12 col-md-auto">
+                    <div class="col-auto">
+                        <img src="../assets/images/logo.jpeg" alt="محلي" height="40">
+                    </div>
+                    <div class="d-md-none col-auto">
+                        <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light shadow-sm rounded"
+                                placeholder="اكتب اسم المنتج">
+                            <button class="btn btn-dark mx-2 d-lg-none px-3 rounded" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-auto">
+                    <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="py-3 border-bottom bg-white">
+        <div class="container">
+            <div class="nav-container">
+                <button class="scroll-btn left mx-2" onclick="scrollNav('left')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-btn right mx-2" onclick="scrollNav('right')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="overflow-auto nav-scroll mx-2" style="white-space: nowrap;" id="navScroll">
+                    <div class="d-flex">
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <div class="container py-4">
+        <div class="category-scroll-container mb-4">
+            <button class="scroll-btn scroll-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="categories-wrapper">
+                <div class="categories">
+                    <button class="category-btn active">الكل</button>
+                    <button class="category-btn">العاب الاطفال</button>
+                    <button class="category-btn">العاب تعليمية</button>
+                    <button class="category-btn">العاب ذكاء وتركيز</button>
+                    <button class="category-btn">مجموعات الالعاب</button>
+                </div>
+            </div>
+            <button class="scroll-btn scroll-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="row">
+            <!-- Product Grid -->
+            <div class="col-lg-9">
+                <div class="row g-4">
+                    <!-- Product Card 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/7.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="../assets/images/7.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span class="">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/4.jpg"
+                                class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-container d-none d-lg-block" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <div class="sidebar">
+                        <div class="filter-section border-bottom pb-3">
+                            <h6 class="mb-3">ترتيب المحتوى</h6>
+                            <div class="sort-options">
+                                <button class="sort-btn active m-1">وفقا لمقترحاتنا</button>
+                                <button class="sort-btn m-1">وصل حديثاً</button>
+                                <button class="sort-btn m-1">الأكثر مبيعاً</button>
+                                <button class="sort-btn m-1">الأعلى تقييماً</button>
+                                <button class="sort-btn m-1">السعر من الأعلى إلى الأسفل</button>
+                                <button class="sort-btn m-1">السعر من الأسفل إلى الأعلى</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#ratingsCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">التقييمات</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="ratingsCollapse">
+                                <div class="sort-options">
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#paymentCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">طرق الدفع</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="paymentCollapse">
+                                <div class="sort-options">
+                                    <div class="row g-2">
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
+                                                    alt="Apple Pay" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                                                    alt="Visa" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/ar/f/f5/Mada_Logo.svg"
+                                                    alt="Mada" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://stc.com.sa/wps/wcm/connect/english/stc/resources/0/6/06a7f837-47a8-4c38-8040-b5220741a769/stcpay-logo.svg"
+                                                    alt="STC Pay" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://tamara.co/wp-content/uploads/2020/11/tamara-logo-black.svg"
+                                                    alt="Tamara" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://tabby.ai/sa-en/wp-content/uploads/sites/4/2020/12/tabby-logo.svg"
+                                                    alt="Tabby" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.urpay.com/assets/images/logo.svg" alt="UR Pay"
+                                                    height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.paypal.com/paypalme/assets/icons/pp-logo.svg"
+                                                    alt="PayPal" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.gstatic.com/pay/images/marks/gpay_acceptance_mark_with_text.svg"
+                                                    alt="Google Pay" height="20">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#brandsCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">الماركة</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="brandsCollapse">
+                                <div class="sort-options">
+                                    <button class="sort-btn m-1">Intex</button>
+                                    <button class="sort-btn m-1">Barbie</button>
+                                    <button class="sort-btn m-1">Banpresto</button>
+                                    <button class="sort-btn m-1">not specified</button>
+                                    <button class="sort-btn m-1">Bestway</button>
+                                    <button class="sort-btn m-1">Lego</button>
+                                    <button class="sort-btn m-1">فكتو</button>
+                                    <button class="sort-btn m-1">Funko</button>
+                                    <button class="sort-btn m-1">كاجيرو</button>
+                                    <button class="sort-btn m-1">قطع غيار سكوتر</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#offersCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">العروض والتخفيضات</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="offersCollapse">
+                                <div class="sort-options">
+                                    <button class="sort-btn">جميع الخصومات</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h6 class="mb-3">نطاق السعر</h6>
+                            <div class="d-flex gap-2">
+                                <input type="number" class="form-control" placeholder="من" value="0">
+                                <input type="number" class="form-control" placeholder="إلى" value="1245">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation" class="pagination-nav">
+                        <ul class="pagination pagination-lg justify-content-center mb-0 gap-2">
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#" aria-label="Next">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item d-none d-sm-block">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">34</a>
+                            </li>
+                            <li class="page-item d-none d-sm-block">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">...</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 bg-danger text-white" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#" aria-label="Previous">
+                                    <i class="fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-white pt-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>حمل تطبيق محلي</h4>
+                    <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <h4>المدونة والمساعدة</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="text-muted">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>المزيد عن محلي</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">عن الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">بيع على الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الشروط والأحكام</a></li>
+                        <li><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>بوابتك الأولى للعلامات المحلية!</h4>
+                    <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية
+                        البحث عن
+                        المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top">
+                <img src="../assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+                <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+                <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Add offcanvas wrapper that will reuse the sidebar content -->
+    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="filterSidebar">
+        <div class="offcanvas-header border-bottom shadow-sm">
+            <h5 class="offcanvas-title fw-bold mb-0">فلترة المنتجات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4">
+            <!-- This will be populated with sidebar content via JavaScript -->
+            <div id="mobileSidebar"></div>
+        </div>
+        <div class="apply-filters-container px-4 py-3 bg-white border-top shadow-lg">
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary flex-grow-1 py-2" data-bs-dismiss="offcanvas">
+                    مسح الفلترة
+                </button>
+                <button class="btn btn-danger flex-grow-1 py-2">
+                    عرض النتائج (1830)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

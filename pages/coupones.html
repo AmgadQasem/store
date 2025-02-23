@@ -1,0 +1,566 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العود</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="clothes-type bg-white">
+    <!-- Header -->
+    <header class="py-4 bg-danger">
+        <div class="container">
+            <div class="row gy-3 gy-md-0 align-items-center">
+                <div class="d-flex justify-content-between col-12 col-md-auto">
+                    <div class="col-auto">
+                        <img src="../assets/images/logo.jpeg" alt="محلي" height="40">
+                    </div>
+                    <div class="d-md-none col-auto">
+                        <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light shadow-sm rounded"
+                                placeholder="اكتب اسم المنتج">
+                            <i class="fas fa-search position-absolute end-0"
+                                style="margin-top: 10px; margin-left: 10px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-auto">
+                    <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="py-3 border-bottom bg-white">
+        <div class="container">
+            <div class="nav-container">
+                <button class="scroll-btn left mx-2" onclick="scrollNav('left')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-btn right mx-2" onclick="scrollNav('right')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="overflow-auto nav-scroll mx-2" style="white-space: nowrap;" id="navScroll">
+                    <div class="d-flex">
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Info Section -->
+    <main>
+        <div class="container-fluid bg-light">
+            <div class="container py-4">
+                <!-- Breadcrumb -->
+                <div class="d-flex align-items-center gap-2 mb-4 small">
+                    <a href="#" class="text-muted text-decoration-none">الرئيسية</a>
+                    <i class="fas fa-angle-left text-muted" style="font-size: 10px;"></i>
+                    <a href="#" class="text-muted text-decoration-none">الكوبونات</a>
+                </div>
+                <h2>تسوَّق مع كوبونات محلي</h2>
+                <h5 class="text-secondary">خصومات من متاجر مختارة لمدة محدودة، لا تفوِّتها!</h5>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-white">
+            <div class="container py-4">
+                <div class="row g-4">
+                    <!-- DreamBox Coupon -->
+                    <a href="copuns-info.html" class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/4.png" alt="DreamBox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">DreamBox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">20%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 28 فبراير</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/5.jpg" alt="مجوهرات" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/5.jpg" alt="مجوهرات" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">K94</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fox Coupon -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="card text-center h-100 border shadow-sm">
+                            <img src="../assets/images/5.jpg" alt="Fox" class="card-img-top p-2"
+                                style="height: 60px; object-fit: contain;">
+                            <div class="card-body p-2">
+                                <h6 class="card-title border-bottom border-dotted small mb-1 pb-2">Fox</h6>
+                                <p class="card-text discount-badge text-dark rounded-pill h5 mb-1">15%</p>
+                                <p class="expiry-date text-muted text-danger small mb-1">ينتهي 15 مارس</p>
+                                <div class="coupon-images d-flex justify-content-center gap-1">
+                                    <img src="../assets/images/2.jpg" alt="منتج 1" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                    <img src="../assets/images/4.jpg" alt="منتج 2" class="img-thumbnail"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2 w-100 copy-btn" 
+                                    onclick="copyCode(this)" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="انقر للنسخ">FOX15</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-light pt-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>حمل تطبيق محلي</h4>
+                    <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <h4>المدونة والمساعدة</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="text-muted">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>المزيد عن محلي</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">عن الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">بيع على الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الشروط والأحكام</a></li>
+                        <li><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>بوابتك الأولى للعلامات المحلية!</h4>
+                    <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية
+                        البحث عن
+                        المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top">
+                <img src="../assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+                <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+                <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Function to copy code
+        function copyCode(button) {
+            // Get the text content of the button
+            const code = button.textContent;
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = code;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary textarea
+            document.body.removeChild(textarea);
+            
+            // Update tooltip and button text temporarily
+            const tooltip = bootstrap.Tooltip.getInstance(button);
+            const originalTitle = button.getAttribute('title');
+            const originalText = button.textContent; // Store original button text
+            
+            button.setAttribute('title', 'تم النسخ!');
+            button.textContent = 'تم النسخ!'; // Change button text
+            tooltip.dispose(); // Remove existing tooltip
+            new bootstrap.Tooltip(button).show(); // Create and show new tooltip
+            
+            // Change button style temporarily
+            const originalClass = button.className; // Store original button class
+            button.classList.remove('btn-primary');
+            button.classList.add('btn-success');
+            
+            // Reset button and tooltip after 2 seconds
+            setTimeout(() => {
+                button.className = originalClass; // Revert to original class
+                button.textContent = originalText; // Revert to original text
+                button.setAttribute('title', originalTitle);
+                tooltip.dispose();
+                new bootstrap.Tooltip(button);
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

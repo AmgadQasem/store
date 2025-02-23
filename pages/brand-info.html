@@ -1,0 +1,669 @@
+<html lang="ar" dir="rtl">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العود</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="clothes-type">
+    <!-- Header -->
+    <header class="py-4 bg-danger">
+        <div class="container">
+            <div class="row gy-3 gy-md-0 align-items-center">
+                <div class="d-flex justify-content-between col-12 col-md-auto">
+                    <div class="col-auto">
+                        <img src="../assets/images/logo.jpeg" alt="محلي" height="40">
+                    </div>
+                    <div class="d-md-none col-auto">
+                        <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light shadow-sm rounded"
+                                placeholder="اكتب اسم المنتج">
+                            <button class="btn btn-dark mx-2 d-lg-none px-3 rounded" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-auto">
+                    <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Add this section after the header and before the main section -->
+    <div class="brand-header position-relative bg-light">
+        <!-- Brand Cover Image -->
+        <div class="brand-cover w-100" style="height: 50px; background-color: #f8f9fa;">
+            <!-- You can add a cover image here if needed -->
+        </div>
+        <div class="container">
+            <div class="d-flex align-items-center gap-2 mb-4 small">
+                <a href="#" class="text-muted text-decoration-none">الرئيسية</a>
+                <i class="fas fa-angle-left text-muted" style="font-size: 10px;"></i>
+                <a href="#" class="text-muted text-decoration-none">Golden Slsal</a>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Brand Logo and Info -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center gap-3 py-3">
+                        <!-- Brand Logo -->
+                        <div class="brand-logo rounded-circle overflow-hidden bg-white"
+                            style="width: 80px; height: 80px;">
+                            <img src="../assets/images/1/buy-product.png" alt="Golden Sisal"
+                                class="w-100 h-100 object-fit-cover">
+                        </div>
+
+                        <!-- Brand Details -->
+                        <div class="brand-details">
+                            <div class="d-flex align-items-center gap-2">
+                                <h1 class="h4 mb-0">Golden Sisal</h1>
+                                <div class="rating">
+                                    <span class="text-warning">4.9</span>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-0">قولدن سلسال موقع مختص في تصميم المطليات بأرق التصاميم واعلى
+                                معايير الجودة ويتميز بتقديم ضمان ذهبي (مدى الحياة) على جميع المطليات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Navigation Tabs -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs border-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary active" href="#" onclick="setActiveTab(this)">
+                                <i class="fas fa-store"></i>
+                                المنتجات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#" onclick="setActiveTab(this)">
+                                <i class="fas fa-store"></i>
+                                عن المتجر
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                function setActiveTab(selectedTab) {
+                    // Handle tab active states
+                    const tabs = document.querySelectorAll('.nav-link');
+                    tabs.forEach(tab => {
+                        tab.classList.remove('active');
+                    });
+                    selectedTab.classList.add('active');
+
+                    // Handle section visibility
+                    const section1 = document.querySelector('.section-1');
+                    const section2 = document.querySelector('.section-2');
+
+                    if (selectedTab.textContent.includes('عن المتجر')) {
+                        section1.style.display = 'none';
+                        section2.style.display = 'block';
+                    } else {
+                        section1.style.display = 'block';
+                        section2.style.display = 'none';
+                    }
+                }
+
+                // Initialize sections on page load
+                document.addEventListener('DOMContentLoaded', function () {
+                    const section2 = document.querySelector('.section-2');
+                    section2.style.display = 'none';
+                });
+            </script>
+
+            <!-- Bottom Navigation Tabs -->
+            <div class="row py-3 brand-item">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center pt-3">
+                        <div class="nav-tabs-wrapper">
+                            <button class="btn btn-danger px-4">الكل</button>
+                            <button class="btn btn-light px-4">مطليات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-2 -->
+    <div class="section-2 container py-4 px-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <button class="btn btn-outline-primary rounded-pill px-3 px-md-4 py-2 shadow-sm hover-scale">
+                        <i class="fas fa-file-alt me-2"></i>
+                        <span class="d-none d-sm-inline">وثيقة عمل حر</span>
+                        <span class="d-inline d-sm-none">وثيقة</span>
+                    </button>
+                    <button class="btn btn-outline-success rounded-pill px-3 px-md-4 py-2 shadow-sm hover-scale">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-none d-sm-inline">عنوان رسمي</span>
+                        <span class="d-inline d-sm-none">عنوان</span>
+                    </button>
+                    <button class="btn btn-outline-info rounded-pill px-3 px-md-4 py-2 shadow-sm hover-scale">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <span class="d-none d-sm-inline">موثق</span>
+                        <span class="d-inline d-sm-none">موثق</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="mb-4 pt-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">تقييمات المنتج (10)</h4>
+                <a href="#" class="text-decoration-none text-muted">
+                    عرض الكل <i class="fas fa-chevron-left ms-1"></i>
+                </a>
+            </div>
+
+            <!-- Review Items -->
+            <div class="review-items">
+                <!-- Review Item 1 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/5.jpg" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Review Item 2 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/4.png" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Review Item 3 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/3.jpg" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q&A Section -->
+            <div class="d-flex justify-content-center">
+                <div class="btn-group">
+                    <button class="btn btn-outline-primary text-center py-2" style="transition: background-color 0.3s;">
+                        السابق
+                    </button>
+                    <button class="btn btn-outline-primary text-center py-2" style="transition: background-color 0.3s;">
+                        التالي
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-1 -->
+    <div class="section-1 container pt-3">
+        <div class="row">
+            <!-- Product Grid -->
+            <div class="col-lg-9">
+                <div class="row g-4">
+                    <!-- Product Card 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/7.jpg" class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="../assets/images/7.jpg" class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span class="">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg" class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <span class="badge badge-discount position-absolute">-38%</span>
+                            <img src="../assets/images/8.jpg" class="card-img-top" alt="صرصور لعبة">
+                            <div class="card-body">
+                                <h5 class="product-title">صرصور لعبة</h5>
+                                <div class="product-rating mb-2">
+                                    <span class="rating-value">4</span>
+                                    <div class="me-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <span class="rating-count">(1)</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="price">
+                                        <span>13 ريال</span>
+                                        <span class="original-price">21 ريال</span>
+                                    </div>
+                                    <button class="wishlist-btn">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-container d-none d-lg-block" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                    <div class="sidebar">
+                        <div class="filter-section border-bottom pb-3">
+                            <h6 class="mb-3">ترتيب المحتوى</h6>
+                            <div class="sort-options">
+                                <button class="sort-btn active m-1">وفقا لمقترحاتنا</button>
+                                <button class="sort-btn m-1">وصل حديثاً</button>
+                                <button class="sort-btn m-1">الأكثر مبيعاً</button>
+                                <button class="sort-btn m-1">الأعلى تقييماً</button>
+                                <button class="sort-btn m-1">السعر من الأعلى إلى الأسفل</button>
+                                <button class="sort-btn m-1">السعر من الأسفل إلى الأعلى</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#ratingsCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">التقييمات</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="ratingsCollapse">
+                                <div class="sort-options">
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                    <button class="rating-btn m-1">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        وأعلى
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#paymentCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">طرق الدفع</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="paymentCollapse">
+                                <div class="sort-options">
+                                    <div class="row g-2">
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
+                                                    alt="Apple Pay" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                                                    alt="Visa" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/ar/f/f5/Mada_Logo.svg"
+                                                    alt="Mada" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://stc.com.sa/wps/wcm/connect/english/stc/resources/0/6/06a7f837-47a8-4c38-8040-b5220741a769/stcpay-logo.svg"
+                                                    alt="STC Pay" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://tamara.co/wp-content/uploads/2020/11/tamara-logo-black.svg"
+                                                    alt="Tamara" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://tabby.ai/sa-en/wp-content/uploads/sites/4/2020/12/tabby-logo.svg"
+                                                    alt="Tabby" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.urpay.com/assets/images/logo.svg" alt="UR Pay"
+                                                    height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.paypal.com/paypalme/assets/icons/pp-logo.svg"
+                                                    alt="PayPal" height="20">
+                                            </button>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="sort-btn d-flex align-items-center gap-2">
+                                                <img src="https://www.gstatic.com/pay/images/marks/gpay_acceptance_mark_with_text.svg"
+                                                    alt="Google Pay" height="20">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#brandsCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">الماركة</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="brandsCollapse">
+                                <div class="sort-options">
+                                    <button class="sort-btn m-1">Intex</button>
+                                    <button class="sort-btn m-1">Barbie</button>
+                                    <button class="sort-btn m-1">Banpresto</button>
+                                    <button class="sort-btn m-1">not specified</button>
+                                    <button class="sort-btn m-1">Bestway</button>
+                                    <button class="sort-btn m-1">Lego</button>
+                                    <button class="sort-btn m-1">فكتو</button>
+                                    <button class="sort-btn m-1">Funko</button>
+                                    <button class="sort-btn m-1">كاجيرو</button>
+                                    <button class="sort-btn m-1">قطع غيار سكوتر</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <div class="section-header mb-3" data-bs-toggle="collapse" data-bs-target="#offersCollapse"
+                                aria-expanded="true">
+                                <h6 class="mb-0">العروض والتخفيضات</h6>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse show border-bottom pb-3" id="offersCollapse">
+                                <div class="sort-options">
+                                    <button class="sort-btn">جميع الخصومات</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h6 class="mb-3">نطاق السعر</h6>
+                            <div class="d-flex gap-2">
+                                <input type="number" class="form-control" placeholder="من" value="0">
+                                <input type="number" class="form-control" placeholder="إلى" value="1245">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation" class="pagination-nav">
+                        <ul class="pagination pagination-lg justify-content-center mb-0 gap-2">
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#" aria-label="Next">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item d-none d-sm-block">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">34</a>
+                            </li>
+                            <li class="page-item d-none d-sm-block">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">...</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 bg-danger text-white" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3 border-0 text-dark" href="#" aria-label="Previous">
+                                    <i class="fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-white pt-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>حمل تطبيق محلي</h4>
+                    <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <h4>المدونة والمساعدة</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="text-muted">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>المزيد عن محلي</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">عن الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">بيع على الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الشروط والأحكام</a></li>
+                        <li><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>بوابتك الأولى للعلامات المحلية!</h4>
+                    <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية
+                        البحث عن
+                        المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top">
+                <img src="../assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+                <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+                <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

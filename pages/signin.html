@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول </title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link href="../assets/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/login-signin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+
+            <!-- Left Side: Sign In Form -->
+            <div class="col-md-6">
+                <!-- Logo -->
+                <div class="text-start mb-4 pt-4">
+                    <img src="../assets/images/logo.jpeg" alt="First Code" class="logo">
+                </div>
+
+                <!-- Form Container -->
+                <div class="form-container bg-white rounded-3 p-4">
+                    <!-- Tab Buttons -->
+                    <div class="tab-buttons mb-4">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="loginType" id="login" checked>
+                                <label for="login">تسجيل دخول</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="loginType" id="signup">
+                                <label for="signup">إنشاء الحساب</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sign In Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="أدخل البريد الإلكتروني">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">كلمة المرور</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="أدخل كلمة المرور">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="#" class="text-dark small">نسيت كلمة المرور؟</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 py-2 mb-3">تسجيل دخول</button>
+
+                        <p class="text-center text-muted small">
+                            ليس لديك حساب؟ <a href="#" class="text-dark">إنشاء حساب جديد</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Right Side: Dashboard Preview -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <!-- Title -->
+                <h2 class="mb-4 p-3">ألقِ نظرة على آخر تحديثات سلة</h2>
+                <div class="preview-card bg-white rounded-4">
+                    <div class="card-container">
+                        <img src="../assets/images/4.jpg" alt="Dashboard Preview"
+                            class="img-fluid rounded-3 mb-4 w-100" style="height: 320px;">
+                        <div class="preview-content">
+                            <h3 class="preview-title mb-3 text-center">كل ما تحتاجه لنمو تجارتك الإلكترونية</h3>
+                            <p class="preview-text text-muted text-center">
+                                سجل الآن واحصل لأكثر من 60 ألف متجر يستفيد من مئات الخدمات اللوجيستية والأدوات التسويقية
+                                المتكاملة في منصة سلة
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verification </title>
+    <link href="../assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/auth-style.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container">
+        <div class="row min-vh-100 justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <div class="mb-3">
+                                <i class="fas fa-envelope-open-text text-pink" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="fw-bold mb-2">التحقق من البريد الإلكتروني</h4>
+                            <p class="text-secondary">لقد أرسلنا رمز التحقق إلى بريدك الإلكتروني</p>
+                            <p class="text-pink mb-4">firstcode@domain.com</p>
+                        </div>
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label">أدخل رمز التحقق</label>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <input type="text" class="form-control verification-input py-3" maxlength="1" required>
+                                    <input type="text" class="form-control verification-input py-3" maxlength="1" required>
+                                    <input type="text" class="form-control verification-input py-3" maxlength="1" required>
+                                    <input type="text" class="form-control verification-input py-3" maxlength="1" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-pink w-100 mb-3">
+                                تحقق من الرمز
+                            </button>
+                            <div class="text-center">
+                                <p class="mb-0 text-secondary">لم تستلم الرمز؟ 
+                                    <a href="#" class="text-pink text-decoration-none">إعادة الإرسال</a>
+                                </p>
+                                <a href="#" class="text-secondary text-decoration-none d-inline-block mt-3">
+                                    <i class="fas fa-arrow-right me-1"></i>
+                                    العودة لتسجيل الدخول
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Auto-focus next input in verification code
+        document.querySelectorAll('.verification-input').forEach((input, index, inputs) => {
+            input.addEventListener('input', function() {
+                if (this.value && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+            
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && !this.value && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

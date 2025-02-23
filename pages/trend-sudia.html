@@ -1,0 +1,288 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>المتجر السعودي</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="../assets/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="trend-sudia">
+      <!-- Header -->
+  <header class="py-4 bg-danger">
+    <div class="container">
+      <div class="row gy-3 gy-md-0 align-items-center">
+        <div class="d-flex justify-content-between col-12 col-md-auto">
+          <div class="col-auto">
+            <img src="../assets/images/logo.jpeg" alt="محلي" height="40">
+          </div>
+          <div class="d-md-none col-auto">
+            <button class="btn btn-dark px-4">تسجيل الدخول</button>
+          </div>
+        </div>
+        <div class="col-12 col-md">
+          <form class="position-relative">
+            <input type="text" class="form-control bg-light" placeholder="اكتب اسم المنتج أو المتجر">
+            <button class="btn position-absolute top-50 end-0 translate-middle-y ms-2">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="d-none d-md-block col-auto">
+          <button class="btn btn-dark px-4">تسجيل الدخول</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div class="container py-4">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h6 class="m-0">الرئيسية <i class="fas fa-chevron-left fa-xs px-2"></i> تزيد السعودية</h6>
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="category-scroll-container mb-4">
+            <button class="scroll-btn scroll-left" onclick="scrollCategories('left')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="categories-wrapper">
+                <div class="categories" id="categoriesScroll">
+                    <button class="category-btn active">الكل</button>
+                    <button class="category-btn">الرياض</button>
+                    <button class="category-btn">جدة</button>
+                    <button class="category-btn">مكة</button>
+                    <button class="category-btn">المدينة المنورة</button>
+                    <button class="category-btn">الدمام</button>
+                </div>
+            </div>
+            <button class="scroll-btn scroll-right" onclick="scrollCategories('right')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row">
+            <div class="col-12">
+                <div class="row g-3">
+                    <!-- Product Card 1 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">1</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/8.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">2</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/9.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">3</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/4.png" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">4</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/4.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">5</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/9.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">6</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/8.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 7 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">7</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/4.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 8 -->
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="bookmark-wrapper d-flex flex-column align-items-center gap-2">
+                                <div class="product-number">8</div>
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <img src="../assets/images/8.jpg" class="product-image" alt="عطر">
+                            <div class="product-info">
+                                <h6 class="product-title">عطر هيربش ليب 100 مل</h6>
+                                <p class="product-price mb-1">
+                                    <span class="old-price">400 ر.س</span>
+                                    <span>199 ر.س</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Footer -->
+  <footer class="mt-5 bg-white pt-4 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>حمل تطبيق محلي</h4>
+          <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-dark">
+              <i class="fab fa-google-play"></i>
+            </a>
+            <a href="#" class="btn btn-outline-dark">
+              <i class="fab fa-apple"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 pt-4">
+          <h4>المدونة والمساعدة</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+            <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="text-muted">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>المزيد عن محلي</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">عن الكود الاول</a></li>
+            <li><a href="#" class="text-muted">بيع على الكود الاول</a></li>
+            <li><a href="#" class="text-muted">الشروط والأحكام</a></li>
+            <li><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>بوابتك الأولى للعلامات المحلية!</h4>
+          <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية البحث عن
+            المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+          <div class="social-links d-flex gap-3">
+            <a href="#" class="text-muted">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-muted">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-4 border-top">
+        <img src="../assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+        <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+        <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+      </div>
+    </div>
+  </footer>
+        <script>
+            function scrollCategories(direction) {
+                const container = document.getElementById('categoriesScroll');
+                const scrollAmount = 200;
+
+                if (direction === 'left') {
+                    container.scrollLeft -= scrollAmount;
+                } else {
+                    container.scrollLeft += scrollAmount;
+                }
+            }
+        </script>
+
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

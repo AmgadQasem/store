@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <title>متجر محلي</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="py-4 bg-danger">
+    <div class="container">
+      <div class="row gy-3 gy-md-0 align-items-center">
+        <div class="d-flex justify-content-between col-12 col-md-auto">
+          <a href="index.html" class="col-auto">
+            <img src="assets/images/logo.jpeg" alt="محلي" height="40">
+          </a>
+          <div class="d-md-none col-auto">
+            <button class="btn btn-dark px-4">تسجيل الدخول</button>
+          </div>
+        </div>
+        <div class="col-12 col-md">
+          <form class="position-relative">
+            <input type="text" class="form-control bg-light" placeholder="اكتب اسم المنتج أو المتجر">
+            <button class="btn position-absolute top-50 end-0 translate-middle-y ms-2">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="d-none d-md-block col-auto">
+          <button class="btn btn-dark px-4">تسجيل الدخول</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="py-3 border-bottom bg-white">
+    <div class="container">
+      <div class="nav-container">
+        <button class="scroll-btn left mx-2" onclick="scrollNav('left')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="scroll-btn right mx-2" onclick="scrollNav('right')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="overflow-auto nav-scroll mx-2" style="white-space: nowrap;" id="navScroll">
+          <div class="d-flex">
+            <a href="pages/clothes-type.html" class="text-center px-2">
+              <i class="fas fa-download mb-1"></i><br>
+              <small>متجر الملابس</small>
+            </a>
+            <a href="pages/about-store.html" class="text-center px-2">
+              <i class="fas fa-gamepad mb-1"></i><br>
+              <small>عن المتجر</small>
+            </a>
+            <a href="pages/condtion.html" class="text-center px-2">
+              <i class="fas fa-gift mb-1"></i><br>
+              <small>الشروط</small>
+            </a>
+            <a href="pages/error-page.html" class="text-center px-2">
+              <i class="fas fa-shop mb-1"></i><br>
+              <small>الخطاء</small>
+            </a>
+            <a href="pages/featured-stores.html" class="text-center px-2">
+              <i class="fas fa-heart mb-1"></i><br>
+              <small>متاجر مميزة</small>
+            </a>
+            <a href="pages/forget-password.html" class="text-center px-2">
+              <i class="fas fa-scissors mb-1"></i><br>
+              <small>نسيت كلمة المرور</small>
+            </a>
+            <a href="pages/policy.html" class="text-center px-2">
+              <i class="fab fa-medrt mb-1"></i><br>
+              <small>سياسة الخصوصية</small>
+            </a>
+            <a href="pages/product-info.html" class="text-center px-2">
+              <i class="fas fa-scissors mb-1"></i><br>
+              <small>حول المنتج</small>
+            </a>
+            <a href="pages/sell-on-store.html" class="text-center px-2">
+              <i class="fas fa-download mb-1"></i><br>
+              <small>بيع على محلي</small>
+            </a>
+            <a href="pages/signin.html" class="text-center px-2">
+              <i class="fas fa-gamepad mb-1"></i><br>
+              <small>تسجيل الدخول</small>
+            </a>
+            <a href="pages/signup.html" class="text-center px-2">
+              <i class="fas fa-gift mb-1"></i><br>
+              <small>اشتراك</small>
+            </a>
+            <a href="pages/trend-sudia.html" class="text-center px-2">
+              <i class="fas fa-shop mb-1"></i><br>
+              <small>الترند</small>
+            </a>
+            <a href="pages/coupones.html" class="text-center px-2">
+              <i class="fas fa-heart mb-1"></i><br>
+              <small>الكوبونات</small>
+            </a>
+            <a href="pages/copuns-info.html" class="text-center px-2">
+              <i class="fas fa-scissors mb-1"></i><br>
+              <small>حول الكوبون</small>
+            </a>
+            <a href="pages/brand-info.html" class="text-center px-2">
+              <i class="fab fa-medrt mb-1"></i><br>
+              <small>البراندات</small>
+            </a>
+            <a href="#" class="text-center px-2">
+              <i class="fas fa-scissors mb-1"></i><br>
+              <small>التحقق</small>
+            </a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-4">
+    <div class="container">
+      <!-- Weekly Offers Banner -->
+      <div class="rounded-4 overflow-hidden mb-4 position-relative">
+        <div id="weeklyOffersCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/1.jpg" class="w-100" alt="العروض الأسبوعية">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/1.jpg" class="w-100" alt="العروض الأسبوعية">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/1.jpg" class="w-100" alt="العروض الأسبوعية">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#weeklyOffersCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#weeklyOffersCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#weeklyOffersCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#weeklyOffersCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#weeklyOffersCarousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promotional Cards -->
+      <div class="row g-4 mb-5">
+        <a href="pages/clothes-type.html" class="col-md-4">
+          <div class="bg-danger text-white rounded-4 p-4 h-100 position-relative overflow-hidden"
+            style="height: 100px !important;">
+            <img src="assets/images/promo1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+          </div>
+        </a>
+        <a href="pages/clothes-type.html" class="col-md-4">
+          <div class="bg-danger text-white rounded-4 p-4 h-100 position-relative overflow-hidden"
+            style="height: 100px !important;">
+            <img src="assets/images/promo2.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+          </div>
+        </a>
+        <a href="pages/clothes-type.html" class="col-md-4">
+          <div class="bg-danger text-white rounded-4 p-4 h-100 position-relative overflow-hidden"
+            style="height: 100px !important;">
+            <img src="assets/images/promo3.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+          </div>
+        </a>
+      </div>
+
+      <!-- Trending in Saudi Arabia -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4 mb-0">ترند السعودية</h2>
+          <a href="pages/trend-sudia.html" class="text-decoration-none text-muted">
+            <small>عرض الكل</small>
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <div class="trending-container position-relative p-0">
+          <button class="scroll-btn left" onclick="scrollTrending('left')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="scroll-btn right" onclick="scrollTrending('right')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="row flex-nowrap overflow-auto g-4" id="trendingScroll">
+            <div class="col-9 col-sm-6 col-md-3 px-2">
+              <div class="card h-100 border">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">الرياض</h5>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">1</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/4.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">2</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/5.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">3</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/6.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-sm-6 col-md-3 px-2">
+              <div class="card h-100 border">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">الرياض</h5>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">1</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/4.png" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">2</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/5.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">3</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/6.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">المجموعة الفكتورية</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-sm-6 col-md-3 px-2">
+              <div class="card h-100 border">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">مكة</h5>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">1</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/5.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة سينس</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">2</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/4.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة سينس</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">3</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/6.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة سينس</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-sm-6 col-md-3 px-2">
+              <div class="card h-100 border">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">جدة</h5>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">1</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/3.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة المدللة</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">2</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/4.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة المدللة</span>
+                    </div>
+                  </a>
+                  <a href="pages/product-info.html" class="d-flex align-items-center justify-content-between py-2">
+                    <div class="text-black-50 fs-4 fw-light" style="min-width: 20px; order: 2;">3</div>
+                    <div class="d-flex align-items-center gap-2 justify-content-end">
+                      <img src="assets/images/6.jpg" alt="ساعة" class="rounded-2"
+                        style="width: 32px; height: 32px; object-fit: cover;">
+                      <span class="text-secondary fs-6">مجموعة المدللة</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Stores -->
+      <section class="pb-3">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4 mb-0">متاجر مميزة</h2>
+          <a href="pages/featured-stores.html" class="text-decoration-none text-muted">
+            <small>عرض الكل</small>
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <div class="featured-stores-container position-relative">
+          <button class="scroll-btn left" onclick="scrollFeaturedStores('left')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="scroll-btn right" onclick="scrollFeaturedStores('right')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="row flex-nowrap overflow-auto g-4" id="featuredStoresScroll">
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">باقا للألماس و المجوهرات</h3>
+              </div>
+            </a>
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">الخبير لأدوات العود</h3>
+              </div>
+            </a>
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">ليون بروتين</h3>
+              </div>
+            </a>
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">مكتبة ريكان</h3>
+              </div>
+            </a>
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">تونا بوتيك</h3>
+              </div>
+            </a>
+            <a href="pages/brand-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-4 text-center h-100">
+                <img src="assets/images/7.jpeg" class="mb-3" alt="">
+                <h3 class="h6">سنوايت العربية</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Picks -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4 mb-0">مختارات الفريق</h2>
+          <a href="pages/clothes-type.html" class="text-decoration-none text-muted">
+            <small>عرض الكل</small>
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <div class="team-picks-container position-relative">
+          <button class="scroll-btn left" onclick="scrollTeamPicks('left')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="scroll-btn right" onclick="scrollTeamPicks('right')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="row flex-nowrap overflow-auto g-4" id="teamPicksScroll">
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <a href="pages/product-info.html" class="text-decoration-none">
+                <div class="bg-white rounded-4 p-3">
+                  <div class="product-image mb-3">
+                    <img src="assets/images/4.jpg" class="w-100 rounded-4" alt="محفظة جلدية">
+                  </div>
+                  <div class="price text-dark">167.9 رس</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Products -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h4 mb-0">الحق عليها</h2>
+          <a href="#" class="text-decoration-none text-muted">
+            <small>عرض الكل</small>
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <div class="latest-products-container position-relative">
+          <button class="scroll-btn left" onclick="scrollLatestProducts('left')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="scroll-btn right" onclick="scrollLatestProducts('right')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="row flex-nowrap overflow-auto g-4" id="latestProductsScroll">
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+            <a href="pages/product-info.html" class="col-9 col-sm-6 col-md-4 col-lg-2">
+              <div class="bg-white rounded-4 p-3">
+                <div class="position-relative mb-3">
+                  <span class="position-absolute end-0 top-0 bg-danger text-white px-2 py-1 rounded">-51%</span>
+                  <img src="assets/images/9.jpg" class="w-100 rounded-4" alt="لعبة الحماسية">
+                </div>
+                <div class="text-muted small">لعبة بن ون الحماسية من توي جوي</div>
+                <div class="d-flex align-items-center gap-1 mt-2">
+                  <i class="fas fa-star text-warning"></i>
+                  <span>5</span>
+                  <span class="text-muted">(227)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between flex-column">
+                    <div class="price text-dark">39 رس</div>
+                    <div class="text-decoration-line-through text-muted">79 رس</div>
+                  </div>
+                  <div><i class="fas fa-bookmark"></i></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 bg-white pt-4 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>حمل تطبيق محلي</h4>
+          <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-dark">
+              <i class="fab fa-google-play"></i>
+            </a>
+            <a href="#" class="btn btn-outline-dark">
+              <i class="fab fa-apple"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 pt-4">
+          <h4>المدونة والمساعدة</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+            <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="text-muted">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>المزيد عن محلي</h4>
+          <ul class="list-unstyled">
+            <li><a href="pages/about-store.html" class="text-muted">عن الكود الاول</a></li>
+            <li><a href="pages/sell-on-store.html" class="text-muted">بيع على الكود الاول</a></li>
+            <li><a href="pages/condtion.html" class="text-muted">الشروط والأحكام</a></li>
+            <li><a href="pages/policy.html" class="text-muted">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>بوابتك الأولى للعلامات المحلية!</h4>
+          <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية البحث عن
+            المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+          <div class="social-links d-flex gap-3">
+            <a href="#" class="text-muted">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-muted">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-4 border-top">
+        <img src="assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+        <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+        <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

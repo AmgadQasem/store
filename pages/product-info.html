@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend Store</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="py-4 bg-danger">
+        <div class="container">
+            <div class="row gy-3 gy-md-0 align-items-center">
+                <div class="d-flex justify-content-between col-12 col-md-auto">
+                    <div class="col-auto">
+                        <img src="../assets/images/logo.jpeg" alt="محلي" height="40">
+                    </div>
+                    <div class="d-md-none col-auto">
+                        <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light shadow-sm rounded"
+                                placeholder="اكتب اسم المنتج">
+                            <button class="btn btn-dark mx-2 d-lg-none px-3 rounded" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-auto">
+                    <button class="btn btn-dark px-4">تسجيل الدخول</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="py-3 border-bottom bg-white">
+        <div class="container">
+            <div class="nav-container">
+                <button class="scroll-btn left mx-2" onclick="scrollNav('left')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-btn right mx-2" onclick="scrollNav('right')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="overflow-auto nav-scroll mx-2" style="white-space: nowrap;" id="navScroll">
+                    <div class="d-flex">
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-download mb-1"></i><br>
+                            <small>منتجات رقمية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gamepad mb-1"></i><br>
+                            <small>العاب</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-gift mb-1"></i><br>
+                            <small>هدايا و مناسبات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-shop mb-1"></i><br>
+                            <small>بضائع محلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-heart mb-1"></i><br>
+                            <small>الحيوانات</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fab fa-medrt mb-1"></i><br>
+                            <small>صيدلية</small>
+                        </a>
+                        <a href="#" class="text-center px-2">
+                            <i class="fas fa-scissors mb-1"></i><br>
+                            <small>قرطسية</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Info Section -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Breadcrumb -->
+            <div class="d-flex align-items-center gap-2 mb-4 small">
+                <a href="#" class="text-muted text-decoration-none">الرئيسية</a>
+                <i class="fas fa-angle-left text-muted" style="font-size: 10px;"></i>
+                <a href="#" class="text-muted text-decoration-none">العاب الاطفال</a>
+                <i class="fas fa-angle-left text-muted" style="font-size: 10px;"></i>
+                <a href="#" class="text-muted text-decoration-none">العاب وتركيز</a>
+                <i class="fas fa-angle-left text-muted" style="font-size: 10px;"></i>
+                <span class="text-muted">دمى</span>
+            </div>
+
+            <!-- Product Section -->
+            <div class="col-12">
+                <div class="d-flex flex-column flex-lg-row gap-4">
+                    <!-- Product Images -->
+                    <div class="position-relative card shadow-lg mx-auto mx-lg-0"
+                        style="border-radius: 12px; overflow: hidden; width: 100%; max-width: 350px;">
+                        <!-- Bookmark & Share Buttons -->
+                        <div class="position-absolute top-0 end-0 m-3 z-3 d-flex">
+                            <button
+                                class="btn btn-light rounded-circle me-2 shadow-sm d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#shareModal" style="width: 35px; height: 35px;">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button
+                                class="btn btn-light rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#phoneModal" style="width: 35px; height: 35px;">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <div style="padding-bottom: 100%; position: relative;">
+                            <div id="productCarousel" class="carousel slide position-absolute top-0 start-0 w-100 h-100"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="../assets/images/2.jpg" class="d-block w-100 h-100"
+                                            alt="Foster Clark's Custard Powder" style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="../assets/images/3.jpg" class="d-block w-100 h-100"
+                                            alt="Foster Clark's Custard Powder" style="object-fit: cover;">
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Navigation Arrows -->
+                                <div class="position-absolute top-50 translate-middle-y end-0 z-2">
+                                    <button type="button" data-bs-target="#productCarousel" data-bs-slide="prev"
+                                        class="btn p-0 ms-2">
+                                        <div class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center"
+                                            style="width: 30px; height: 30px;">
+                                            <i class="fas fa-chevron-left text-dark" style="font-size: 12px;"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="position-absolute top-50 translate-middle-y strat-0 z-2">
+                                    <button type="button" data-bs-target="#productCarousel" data-bs-slide="next"
+                                        class="btn p-0 me-2">
+                                        <div class="bg-white rounded-circle shadow d-flex align-items-center justify-content-center"
+                                            style="width: 30px; height: 30px;">
+                                            <i class="fas fa-chevron-right text-dark" style="font-size: 12px;"></i>
+                                        </div>
+                                    </button>
+                                </div>
+
+                                <!-- Carousel Indicators -->
+                                <div class="carousel-indicators position-absolute mb-0" style="bottom: 10px;">
+                                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0"
+                                        class="active rounded-circle" aria-current="true" aria-label="Slide 1"
+                                        style="width: 6px; height: 6px; background-color: #666;"></button>
+
+                                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                                        class="rounded-circle" aria-label="Slide 2"
+                                        style="width: 6px; height: 6px; background-color: #666;"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="pt-2 flex-grow-1">
+                        <h1 class="h4 mb-2">مجموعة رمضان المخفضة</h1>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <span class="text-warning">5</span>
+                                <div class="me-1">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <span class="text-muted">(10)</span>
+                            </div>
+                        </div>
+                        <div class="price-section mb-3">
+                            <div class="d-flex align-items-center gap-2 pt-3 pb-5">
+                                <h2 class="text-danger h4 mb-0">60 ر.س</h2>
+                                <span class="text-decoration-line-through text-muted">72.75 ر.س</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2" style="max-width: 350px;">
+                            <button class="btn btn-danger flex-fill py-2 px-3">
+                                <i class="fas fa-bolt me-1"></i>
+                                الشراء الآن
+                            </button>
+                            <button class="btn btn-danger flex-fill py-2 px-3">
+                                <i class="fas fa-shopping-cart me-1"></i>
+                                أضف إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Description -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="p-4">
+                    <div class="description-content">
+                        <h5 class="mb-3">الوصف</h5>
+                        <div class="position-relative">
+                            <div id="descriptionText" class="text-muted"
+                                style="max-height: 100px; overflow: hidden; transition: max-height 0.3s ease-out;">
+                                <p class="mb-2">مكونة من 10 قطع مختلفة:</p>
+                                <ul class="list-unstyled">
+                                    <li>• مهلبية</li>
+                                    <li>• كريم كراميل</li>
+                                    <li>• فيمتو</li>
+                                    <li>• سويتز</li>
+                                    <li>• لقمة القاضي</li>
+                                    <li>• حلى الفراولة</li>
+                                    <li>• كريم كراميل بالقهوة</li>
+                                </ul>
+                            </div>
+                            <div id="gradientOverlay" class="position-absolute bottom-0 start-0 w-100"
+                                style="height: 50px; background: linear-gradient(to bottom, transparent, white); pointer-events: none;">
+                            </div>
+                        </div>
+                        <button id="showMoreBtn" class="btn btn-link text-warning p-0 mt-2 d-block mx-auto"
+                            onclick="toggleDescription()">
+                            <i class="fas fa-chevron-down ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Store Info Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card shadow-sm rounded-3">
+                    <div class="card-body">
+                        <!-- Store Header -->
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="../assets/images/2.jpg" alt="Store Logo" class="rounded-circle"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <h2 class="h5 mb-0">سوما سمايل لمغناطيس الثلاجة</h2>
+                                        <div class="d-flex align-items-center gap-1">
+                                            <span class="text-muted">4.9</span>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-0 small pt-4">مغناطيس ثلاجة بتصاميم مميزة، نشحن لكل انحاء
+                                        العالم
+                                        والتوصيل لباب المنزل.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods -->
+                        <div class="mb-4">
+                            <h3 class="h6 mb-3 text-muted">وسائل الدفع</h3>
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/3.jpg" alt="Tamara" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/1.jpg" alt="Tabby" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/google-pay.png" alt="Google Pay" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/apple-pay.png" alt="Apple Pay" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/stc-pay.png" alt="STC Pay" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/paypal.png" alt="PayPal" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/visa.png" alt="Visa" height="20">
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 border">
+                                    <img src="../assets/images/payment/mada.png" alt="Mada" height="20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+        <!-- Reviews Section -->
+        <div class="mb-4 pt-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">تقييمات المنتج (10)</h4>
+                <a href="#" class="text-decoration-none text-muted">
+                    عرض الكل <i class="fas fa-chevron-left ms-1"></i>
+                </a>
+            </div>
+
+            <!-- Review Items -->
+            <div class="review-items">
+                <!-- Review Item 1 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/5.jpg" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Review Item 2 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/4.png" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Review Item 3 -->
+                <div class="card px-5 py-4 mb-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <h6 class="mb-0">مجموعة رمضان المخفضة</h6>
+                                <div class="text-warning mb-1">
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/3.jpg" alt="User" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;">
+
+                                    <div class="d-flex">
+                                        <h6 class="mb-1 mx-2">عقيل المكي</h6>
+                                        <span class="text-muted small">11/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q&A Section -->
+            <div>
+                <h5 class="mb-3 py-4">أسئلة وأجوبة حول المنتج</h5>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-outline-primary text-center py-2 px-5">
+                        اسأل المتجر
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Store Products Section -->
+        <div class="mb-4 pt-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">منتجات أخرى من المتجر</h4>
+                <a href="#" class="text-decoration-none text-muted">
+                    عرض الكل <i class="fas fa-chevron-left ms-1"></i>
+                </a>
+            </div>
+
+            <!-- Products Scroll Container -->
+            <div class="position-relative">
+                <!-- Scroll Navigation Buttons -->
+                <button
+                    class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-2 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+                    onclick="scrollProducts('left')"
+                    style="width: 35px; height: 35px; margin-left: -10px; background-color: white;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button
+                    class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-2 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+                    onclick="scrollProducts('right')"
+                    style="width: 35px; height: 35px; margin-right: -10px; background-color: white;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Products Wrapper -->
+                <div class="overflow-hidden px-2">
+                    <div class="row flex-nowrap products-scroll" style="overflow-x: auto; scroll-behavior: smooth;">
+                        <!-- Product Card 1 -->
+                        <div class="col-9 col-md-3">
+                            <div class="card h-100 border-0 shadow-sm rounded-3 mx-2">
+                                <img src="../assets/images/3.jpg" class="card-img-top p-3" alt="مغناطيس كتكات"
+                                    style="height: 200px; object-fit: contain;">
+                                <div class="card-body">
+                                    <h6 class="card-title mb-2">مغناطيس كتكات</h6>
+                                    <div class="d-flex align-items-center gap-1 mb-2">
+                                        <span class="text-warning">4.88</span>
+                                        <i class="fas fa-star text-warning" style="font-size: 10px;"></i>
+                                        <span class="text-muted small">(42)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">7 ر.س</span>
+                                        <button class="btn btn-light rounded-circle shadow-sm"
+                                            style="width: 35px; height: 35px;">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="col-9 col-md-3">
+                            <div class="card h-100 border-0 shadow-sm rounded-3 mx-2">
+                                <img src="../assets/images/8.jpg" class="card-img-top p-3" alt="مغناطيس شوفان كوكيز"
+                                    style="height: 200px; object-fit: contain;">
+                                <div class="card-body">
+                                    <h6 class="card-title mb-2">مغناطيس شوفان كوكيز</h6>
+                                    <div class="d-flex align-items-center gap-1 mb-2">
+                                        <span class="text-warning">4.94</span>
+                                        <i class="fas fa-star text-warning" style="font-size: 10px;"></i>
+                                        <span class="text-muted small">(18)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">7 ر.س</span>
+                                        <button class="btn btn-light rounded-circle shadow-sm"
+                                            style="width: 35px; height: 35px;">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="col-9 col-md-3">
+                            <div class="card h-100 border-0 shadow-sm rounded-3 mx-2">
+                                <img src="../assets/images/9.jpg" class="card-img-top p-3"
+                                    alt="مغناطيس ثلاجة مبيد حشري عصري" style="height: 200px; object-fit: contain;">
+                                <div class="card-body">
+                                    <h6 class="card-title mb-2">مغناطيس ثلاجة مبيد حشري عصري</h6>
+                                    <div class="d-flex align-items-center gap-1 mb-2">
+                                        <span class="text-warning">5</span>
+                                        <i class="fas fa-star text-warning" style="font-size: 10px;"></i>
+                                        <span class="text-muted small">(1)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">7 ر.س</span>
+                                        <button class="btn btn-light rounded-circle shadow-sm"
+                                            style="width: 35px; height: 35px;">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="col-9 col-md-3">
+                            <div class="card h-100 border-0 shadow-sm rounded-3 mx-2">
+                                <img src="../assets/images/4.png" class="card-img-top p-3"
+                                    alt="مغناطيس ثلاجة زيت عافية" style="height: 200px; object-fit: contain;">
+                                <div class="card-body">
+                                    <h6 class="card-title mb-2">مغناطيس ثلاجة زيت عافية</h6>
+                                    <div class="d-flex align-items-center gap-1 mb-2">
+                                        <span class="text-warning">5</span>
+                                        <i class="fas fa-star text-warning" style="font-size: 10px;"></i>
+                                        <span class="text-muted small">(5)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold">10 ر.س</span>
+                                        <button class="btn btn-light rounded-circle shadow-sm"
+                                            style="width: 35px; height: 35px;">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Out of Stock Notice -->
+            <div class="text-center mt-4">
+                <div class="d-inline-block bg-light rounded-3 px-3 py-2">
+                    <i class="fas fa-exclamation-triangle text-muted me-2"></i>
+                    <span class="text-muted">بلغ عن المنتج</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-white pt-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>حمل تطبيق محلي</h4>
+                    <p class="text-muted">تجربة موثوقة وسهلة للتسوق</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-4">
+                    <h4>المدونة والمساعدة</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">مدونة الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="text-muted">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>المزيد عن محلي</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">عن الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">بيع على الكود الاول</a></li>
+                        <li><a href="#" class="text-muted">الشروط والأحكام</a></li>
+                        <li><a href="#" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>بوابتك الأولى للعلامات المحلية!</h4>
+                    <p class="text-muted">تجول بين عشرات آلاف المتاجر المحلية من سلة، ومنتجات في مكان واحد، مع إمكانية
+                        البحث عن
+                        المنتجات بالاسم والتصنيف والمدينة، وتتبع الطلبات، والشحن السريع.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top">
+                <img src="../assets/images/logo.jpeg" alt="محلي" height="40" class="mb-3">
+                <h6 class="text-muted">احدث منتجات الكود الاول</h6>
+                <p class="text-muted">جميع الحقوق محفوظة لشركة الكود الاول © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Phone Number Modal -->
+    <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <h5 class="modal-title mb-4" id="phoneModalLabel">سجّل برقم جوالك</h5>
+                    <p class="text-muted mb-4">فضلاً أدخل رقم جوالك للتسجيل.</p>
+                    <p class="text-muted small mb-4">إذا كنت تملك حساب في سلة، بإمكانك استخدام نفس رقم الجوال المسجل
+                        لتسجيل الدخول لمحلي.</p>
+
+                    <div class="input-group mb-4" style="max-width: 400px; margin: 0 auto;">
+                        <input type="tel" id="phone" dir="ltr"
+                            class="form-control form-control-lg text-start border-end-0" placeholder="00 000 0000"
+                            style="border-start-start-radius: 8px; border-end-start-radius: 8px;">
+                        <span class="input-group-text bg-white border-start-0"
+                            style="border-start-end-radius: 8px; border-end-end-radius: 8px;">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/images/sa-flag.png" alt="SA" width="24" class="me-1">
+                                <span class="text-muted">+966</span>
+                            </div>
+                        </span>
+                    </div>
+
+                    <button type="button" id="submitPhone" class="btn btn-danger w-100"
+                        style="max-width: 400px; border-radius: 8px; background-color: orangered;">
+                        أرسل رمز التحقق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <h5 class="modal-title mb-3" id="shareModalLabel">شارك المنتج ..</h5>
+                    <p class="text-muted mb-4">يمكنك مشاركة هذا المنتج مع أصدقائك</p>
+
+                    <div class="d-flex justify-content-center gap-4 mb-4">
+                        <!-- X (Twitter) Share -->
+                        <a href="#" class="text-decoration-none text-dark text-center">
+                            <div class="bg-light rounded-circle mb-2 mx-auto d-flex align-items-center justify-content-center"
+                                style="width: 60px; height: 60px;">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <span class="d-block">إكس</span>
+                        </a>
+
+                        <!-- Facebook Share -->
+                        <a href="#" class="text-decoration-none text-dark text-center">
+                            <div class="bg-light rounded-circle mb-2 mx-auto d-flex align-items-center justify-content-center"
+                                style="width: 60px; height: 60px;">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <span class="d-block">فيس بوك</span>
+                        </a>
+
+                        <!-- WhatsApp Share -->
+                        <a href="#" class="text-decoration-none text-dark text-center">
+                            <div class="bg-light rounded-circle mb-2 mx-auto d-flex align-items-center justify-content-center"
+                                style="width: 60px; height: 60px;">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span class="d-block">واتساب</span>
+                        </a>
+                    </div>
+
+                    <!-- Copy Link Section -->
+                    <div class="input-group" style="max-width: 400px; margin: 0 auto;">
+                        <input type="text" id="shareLink" class="form-control border-end-0"
+                            value="firstcode.com/products/435018828/16409579..." readonly
+                            style="background-color: #f8f9fa; border-start-start-radius: 8px; border-end-start-radius: 8px;">
+                        <button id="copyLinkBtn" class="btn btn-danger border-start-0"
+                            style="border-start-end-radius: 8px; border-end-end-radius: 8px; background-color: #ff3b30;">
+                            <i class="fas fa-copy me-2"></i>
+                            نسخ الرابط
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modern clipboard API implementation
+        document.getElementById('copyLinkBtn').addEventListener('click', async function () {
+            const linkInput = document.getElementById('shareLink');
+            const button = this;
+
+            try {
+                // Try to use the modern Clipboard API
+                await navigator.clipboard.writeText(linkInput.value);
+
+                // Visual feedback
+                const originalHtml = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check me-2"></i>تم النسخ';
+                button.style.backgroundColor = '#28a745'; // Success green color
+
+                setTimeout(() => {
+                    button.innerHTML = originalHtml;
+                    button.style.backgroundColor = '#ff3b30';
+                }, 2000);
+            } catch (err) {
+                // Fallback for older browsers
+                linkInput.select();
+                try {
+                    document.execCommand('copy');
+
+                    // Visual feedback
+                    const originalHtml = button.innerHTML;
+                    button.innerHTML = '<i class="fas fa-check me-2"></i>تم النسخ';
+                    button.style.backgroundColor = '#28a745';
+
+                    setTimeout(() => {
+                        button.innerHTML = originalHtml;
+                        button.style.backgroundColor = '#ff3b30';
+                    }, 2000);
+                } catch (err) {
+                    alert('فشل نسخ الرابط');
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
