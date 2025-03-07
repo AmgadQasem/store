@@ -61,11 +61,14 @@
                 <div class="col-12">
                     <div class="d-flex align-items-center gap-3 py-3">
                         <!-- Brand Logo -->
-                        <div class="brand-logo rounded-circle overflow-hidden bg-white"
-                            style="width: 80px; height: 80px;">
-                            <img src="../assets/images/1/buy-product.png" alt="Golden Sisal"
-                                class="w-100 h-100 object-fit-cover">
+                        <div class="d-flex justify-content-center">
+                            <div class="brand-logo rounded-circle overflow-hidden bg-white d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; max-width: 100%;">
+                                <img src="../assets/images/1/buy-product.png" alt="Golden Sisal"
+                                    class="img-fluid object-fit-cover w-100 h-100">
+                            </div>
                         </div>
+
 
                         <!-- Brand Details -->
                         <div class="brand-details">
@@ -661,6 +664,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- Add offcanvas wrapper that will reuse the sidebar content -->
+    <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="filterSidebar">
+        <div class="offcanvas-header border-bottom shadow-sm">
+            <h5 class="offcanvas-title fw-bold mb-0">فلترة المنتجات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4">
+            <!-- This will be populated with sidebar content via JavaScript -->
+            <div id="mobileSidebar"></div>
+        </div>
+        <div class="apply-filters-container px-4 py-3 bg-white border-top shadow-lg">
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary flex-grow-1 py-2" data-bs-dismiss="offcanvas">
+                    مسح الفلترة
+                </button>
+                <button class="btn btn-danger flex-grow-1 py-2">
+                    عرض النتائج (1830)
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
